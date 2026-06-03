@@ -1,0 +1,15 @@
+# Binaries for programs and
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+.env
+# Test binary, built with `
+*.test
+
+# Output of the go coverage
+*.out
+
+# Dependency directories (r
+# vendor/
