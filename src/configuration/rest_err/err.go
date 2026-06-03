@@ -3,19 +3,14 @@ package rest_err
 import "net/http"
 
 type RestErr struct {
-	// Error message.
-	Message string `json:"message"`
-
-	Err string `json:"error"`
-
-	Code int `json:"code"`
-
-	Causes []Causes `json:"causes"`
+	Message string   `json:"message"`
+	Err     string   `json:"error"`
+	Code    int      `json:"code"`
+	Causes  []Causes `json:"causes"`
 }
 
 type Causes struct {
-	Field string `json:"field"`
-
+	Field   string `json:"field"`
 	Message string `json:"message"`
 }
 
